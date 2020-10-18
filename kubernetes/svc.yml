@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: upload-file-svc
+spec:
+  selector:
+    app: upload-file
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 4000
